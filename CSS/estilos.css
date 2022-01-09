@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#fondo-header {
+    background-image: url(../Imagenes/torta-brownie-oreo--2.jpeg);
+    flex-wrap: wrap;
+}
+body {
+    background-color: rgb(245, 187, 196);
+}
+.navbar-brand img {
+    width: 125px;
+}
+.navbar-light .navbar-nav .nav-link {
+    background-color: lightgray;
+    color: black;
+    border: 1px dotted black;
+}
+.navbar-light .navbar-toggler {
+    background-color: darkgray;
+}
+.logo-footer {
+    width: 50px;
+}
+.container1 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.prod-img {
+    width: 150px;
+    padding-right: 5px;
+}
+.estilos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    background-color: rgb(243, 152, 205);
+    width: 100%;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #carouselExampleControls {
+        width: 75%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    #carouselExampleCaptions {
+        width: 75%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    #carouselExampleControls {
+        width: 75%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    #carouselExampleCaptions {
+        width: 75%;
+        height: 75%;
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 13%;
+    }
+}
