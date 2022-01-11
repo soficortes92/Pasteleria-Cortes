@@ -57,6 +57,14 @@ body {
     justify-content: space-around;
     margin: 15px;
 }
+.container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
 
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -69,6 +77,10 @@ body {
         width: 75%;
         height: 75%;
         margin-left: 15%;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
     
 }
@@ -87,5 +99,9 @@ body {
     }
     .navbar-expand-lg .navbar-nav {
         margin-left: 13%;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 }
