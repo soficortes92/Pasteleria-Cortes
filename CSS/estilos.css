@@ -71,12 +71,12 @@ body {
     #carouselExampleControls {
         width: 75%;
         height: 75%;
-        margin-left: 15%;
+        margin: auto;
     }
     #carouselExampleCaptions {
         width: 75%;
         height: 75%;
-        margin-left: 15%;
+        margin: auto;
     }
     .container {
         display: flex;
@@ -89,12 +89,12 @@ body {
     #carouselExampleControls {
         width: 75%;
         height: 75%;
-        margin-left: 15%;
+        margin: auto;
     }
     #carouselExampleCaptions {
         width: 75%;
         height: 75%;
-        margin-left: 15%;
+        margin: auto;
         margin-bottom: 10px;
     }
     .navbar-expand-lg .navbar-nav {
@@ -103,5 +103,10 @@ body {
     .container {
         display: flex;
         justify-content: space-between;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        font-size: larger;
     }
 }
