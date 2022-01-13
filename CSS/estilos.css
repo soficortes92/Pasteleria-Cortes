@@ -68,6 +68,9 @@ body {
 .imagen-aye {
     height: 50vw;
 }
+.mb-3 {
+    margin: 10px;
+}
 
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -112,4 +115,5 @@ body {
     .navbar-expand-lg .navbar-collapse {
         font-size: larger;
     }
+
 }
