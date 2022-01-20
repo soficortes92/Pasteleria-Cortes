@@ -1,0 +1,13 @@
+.footer {
+    & &__estilos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid black;
+        background-color: rgb(170, 170, 170);
+        font-family: 'Advent Pro', sans-serif;
+    }
+    & &__logo {
+        width: 50px;
+    }
+}

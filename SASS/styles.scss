@@ -1,0 +1,38 @@
+@import "header";
+@import "footer";
+@import "vars";
+
+body {
+    background-color: $colorBody;
+}
+.producto {
+    & &__contenedor1 {
+        display: flex;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    & &__contenedor2 {
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    & &__imagen {
+        width: 150px;
+        padding: 5px;
+    }
+    & &__texto {
+        font-family: 'Advent Pro', sans-serif;
+        padding: 5px;
+    }
+    & &__btn {
+        font-family: 'Advent Pro', sans-serif;
+        padding: 5px;
+    }
+}

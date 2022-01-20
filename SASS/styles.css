@@ -1,0 +1,93 @@
+header {
+  background-image: url(../Imagenes/fondo-header1.jpeg);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar-brand img {
+  width: 125px;
+}
+
+header .navbar-nav .nav-link {
+  background-color: lightgray;
+  color: black;
+  border: 1px dotted black;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+header .navbar-toggler {
+  background-color: darkgray;
+}
+
+.footer .footer__estilos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid black;
+  background-color: #aaaaaa;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.footer .footer__logo {
+  width: 50px;
+}
+
+body {
+  background-color: #ffe2e2;
+}
+
+.producto .producto__contenedor1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.producto .producto__contenedor2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.producto .producto__imagen {
+  width: 150px;
+  padding: 5px;
+}
+
+.producto .producto__texto {
+  font-family: 'Advent Pro', sans-serif;
+  padding: 5px;
+}
+
+.producto .producto__btn {
+  font-family: 'Advent Pro', sans-serif;
+  padding: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

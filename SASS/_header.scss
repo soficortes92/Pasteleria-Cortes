@@ -1,0 +1,20 @@
+header {
+    background-image: url(../Imagenes/fondo-header1.jpeg);
+    flex-wrap: wrap;
+    .navbar-brand{
+        img {
+            width:125px;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            background-color: lightgray;
+            color: black;
+            border: 1px dotted black;
+            font-family: 'Advent Pro', sans-serif;
+        }
+    }
+    .navbar-toggler {
+        background-color: darkgray;
+    }
+}
