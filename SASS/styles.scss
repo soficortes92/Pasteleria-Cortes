@@ -5,11 +5,55 @@
 body {
     background-color: $colorBody;
 }
+.bienvenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    font-family: 'Advent Pro', sans-serif;
+    font-size: xx-large;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 0px;
+    animation: bienvenido 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @keyframes bienvenido {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+.contenido {
+    width: 100vh;
+    .containerCarousel {
+        width: 100vw;
+        margin-bottom: 25px;
+        .col-12 .col-xxl-6 {
+            margin-bottom: 15px;
+            padding: 0px;
+            h3 {
+                font-family: 'Advent Pro', sans-serif;
+                font-weight: 1000;
+                text-align: center;
+                font-size: xx-large;
+                text-decoration: underline;
+            }
+        }
+    }
+}
 .producto {
     & &__contenedor1 {
         display: flex;
         border: 1px solid black;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding: 5px;
         margin: 5px;
@@ -18,7 +62,7 @@ body {
         display: flex;
         flex-direction: row-reverse;
         border: 1px solid black;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding: 5px;
         margin: 5px;
