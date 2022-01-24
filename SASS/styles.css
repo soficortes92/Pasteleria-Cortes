@@ -56,8 +56,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
   background-color: #f6f6f6;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   font-size: xx-large;
   font-weight: 1000;
   text-align: center;
@@ -100,22 +101,34 @@ body {
   }
 }
 
-.contenido {
-  width: 100vh;
+.home {
+  width: 100vw;
 }
 
-.contenido .containerCarousel {
+.home .home__row {
+  width: 100vw;
+}
+
+.home .home__carousel {
   width: 100vw;
   margin-bottom: 25px;
 }
 
-.contenido .containerCarousel .col-12 .col-xxl-6 {
-  margin-bottom: 15px;
-  padding: 0px;
+.home .home__carousel .home__carousel1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 100vw;
 }
 
-.contenido .containerCarousel .col-12 .col-xxl-6 h3 {
-  font-family: 'Advent Pro', sans-serif;
+.home .home__carousel .home__carousel1 h3 {
+  font-family: "Advent Pro", sans-serif;
   font-weight: 1000;
   text-align: center;
   font-size: xx-large;
@@ -160,12 +173,26 @@ body {
 }
 
 .producto .producto__texto {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   padding: 5px;
 }
 
 .producto .producto__btn {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   padding: 5px;
+}
+
+.presupuesto {
+  width: 100vw;
+}
+
+.presupuesto h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.presupuesto p {
+  font-family: "Advent Pro", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
