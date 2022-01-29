@@ -3,7 +3,7 @@
 @import "footer";
 
 body {
-    background-color: $colorBody;
+    background-color: map-get($colores, backgroud);
 }
 .bienvenido {
     display: flex;
@@ -65,14 +65,9 @@ body {
         padding: 5px;
         margin: 5px;
     }
-    & &__contenedor2 {
-        display: flex;
+    & &__contenedor--row {
+        @extend .producto__contenedor1;
         flex-direction: row-reverse;
-        border: 1px solid black;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px;
-        margin: 5px;
     }
     & &__imagen {
         width: 150px;
@@ -85,6 +80,14 @@ body {
     & &__btn {
         font-family: $fontFamily;
         padding: 5px;
+    }
+    @mixin box {
+        font-family: $fontFamily;
+        padding: 5px;
+    }
+    & &__btn--box {
+        @include box;
+        background: pink;
     }
 }
 .presupuesto {

@@ -135,7 +135,7 @@ body {
   text-decoration: underline;
 }
 
-.producto .producto__contenedor1 {
+.producto .producto__contenedor1, .producto .producto__contenedor--row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,22 +149,11 @@ body {
   margin: 5px;
 }
 
-.producto .producto__contenedor2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.producto .producto__contenedor--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  border: 1px solid black;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px;
-  margin: 5px;
 }
 
 .producto .producto__imagen {
@@ -180,6 +169,12 @@ body {
 .producto .producto__btn {
   font-family: "Advent Pro", sans-serif;
   padding: 5px;
+}
+
+.producto .producto__btn--box {
+  font-family: "Advent Pro", sans-serif;
+  padding: 5px;
+  background: pink;
 }
 
 .presupuesto {
