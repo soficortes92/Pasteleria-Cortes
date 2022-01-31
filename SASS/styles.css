@@ -135,6 +135,31 @@ body {
   text-decoration: underline;
 }
 
+.home .ayelen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.home .ayelen .ayelen__img {
+  width: 45vw;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.home .ayelen .ayelen__desc {
+  width: 45vw;
+  font-family: "Advent Pro", sans-serif;
+  text-align: justify;
+}
+
 .producto .producto__contenedor1, .producto .producto__contenedor--row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,17 +189,12 @@ body {
 .producto .producto__texto {
   font-family: "Advent Pro", sans-serif;
   padding: 5px;
+  text-align: justify;
 }
 
 .producto .producto__btn {
   font-family: "Advent Pro", sans-serif;
   padding: 5px;
-}
-
-.producto .producto__btn--box {
-  font-family: "Advent Pro", sans-serif;
-  padding: 5px;
-  background: pink;
 }
 
 .presupuesto {
@@ -189,5 +209,13 @@ body {
 
 .presupuesto p {
   font-family: "Advent Pro", sans-serif;
+  text-align: justify;
+  margin: 8px;
+}
+
+.presupuesto .presupuesto__btn {
+  margin: 10px;
+  font-family: "Advent Pro", sans-serif;
+  border: 1px solid #828181;
 }
 /*# sourceMappingURL=styles.css.map */
