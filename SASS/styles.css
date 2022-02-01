@@ -157,10 +157,10 @@ body {
 .home .ayelen .ayelen__desc {
   width: 45vw;
   font-family: "Advent Pro", sans-serif;
-  text-align: justify;
+  text-align: center;
 }
 
-.producto .producto__contenedor1, .producto .producto__contenedor--row {
+.producto .producto__contenedor1, .producto .producto__contenedor--col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,11 +174,11 @@ body {
   margin: 5px;
 }
 
-.producto .producto__contenedor--row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.producto .producto__contenedor--col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .producto .producto__imagen {
@@ -192,7 +192,7 @@ body {
   text-align: justify;
 }
 
-.producto .producto__btn {
+.producto .producto__btn, .producto .producto__btn--box {
   font-family: "Advent Pro", sans-serif;
   padding: 5px;
 }
@@ -217,5 +217,62 @@ body {
   margin: 10px;
   font-family: "Advent Pro", sans-serif;
   border: 1px solid #828181;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #carouselExampleCaptions {
+    width: 75%;
+    margin-left: 95px;
+  }
+  .bienvenido {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: xx-large;
+  }
+  .producto .producto__contenedor--col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-nav {
+    margin-left: 25%;
+    font-size: 20px;
+  }
+  .enlace:hover {
+    background: #d867c0;
+    color: black;
+  }
+  .bienvenido {
+    width: 100vw;
+    font-size: 60px;
+  }
+  .home {
+    width: 100vw;
+  }
+  .home .ayelen {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .home .ayelen .ayelen__img {
+    width: 30%;
+  }
+  .home .ayelen .ayelen__desc {
+    font-size: x-large;
+  }
+  .producto__texto, .producto__btn, .producto__btn--box {
+    font-size: large;
+  }
+  .presupuesto p {
+    font-size: large;
+    margin: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -68,7 +68,7 @@ body {
         & .ayelen__desc {
             width: 45vw;
             font-family: $fontFamily;
-            text-align: justify;
+            text-align: center;
         }
     }
     
@@ -82,9 +82,9 @@ body {
         padding: 5px;
         margin: 5px;
     }
-    & &__contenedor--row {
+    & &__contenedor--col {
         @extend .producto__contenedor1;
-        flex-direction: row-reverse;
+        flex-direction: column;
     }
     & &__imagen {
         width: 150px;
@@ -95,7 +95,7 @@ body {
         padding: 5px;
         text-align: justify;
     }
-    & &__btn {
+    & &__btn, & &__btn--box {
         font-family: $fontFamily;
         padding: 5px;
     }
@@ -120,5 +120,60 @@ body {
         margin: 10px;
         font-family: $fontFamily;
         border: 1px solid rgb(130, 129, 129);
+    }
+}
+@media (min-width: 426px) and (max-width: 768px){
+    #carouselExampleCaptions {
+        width: 75%;
+        margin-left: 95px;
+    }
+    .bienvenido {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: xx-large;
+    }
+    .producto {
+        & .producto__contenedor--col {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+@media (min-width: 769px){
+    .navbar-nav {
+        margin-left: 25%;
+        font-size: 20px;
+    }
+    .enlace:hover {
+        background: rgb(216, 103, 192);
+        color: black;
+    }
+    .bienvenido {
+        width: 100vw;
+        font-size: 60px;
+    }
+    .home {
+        width: 100vw;
+        .ayelen {
+            justify-content: space-around;
+            & .ayelen__img {
+                width: 30%;
+            }
+            & .ayelen__desc {
+                font-size: x-large;
+            }
+        }
+    }
+    .producto {
+        &__texto, &__btn, &__btn--box {
+            font-size: large;
+        }
+    }
+    .presupuesto {
+        & p {
+            font-size: large;
+            margin: 15px;
+        }
     }
 }
