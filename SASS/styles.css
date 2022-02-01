@@ -246,10 +246,6 @@ body {
     margin-left: 25%;
     font-size: 20px;
   }
-  .enlace:hover {
-    background: #d867c0;
-    color: black;
-  }
   .bienvenido {
     width: 100vw;
     font-size: 60px;
@@ -267,12 +263,27 @@ body {
   .home .ayelen .ayelen__desc {
     font-size: x-large;
   }
+  .producto .producto__contenedor1, .producto .producto__contenedor--col {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .producto__texto, .producto__btn, .producto__btn--box {
     font-size: large;
+  }
+  .producto .producto__contenedor--col {
+    margin-left: 165px;
+    width: 1100px;
   }
   .presupuesto p {
     font-size: large;
     margin: 15px;
+  }
+  .presupuesto .presupuesto__btn {
+    font-size: large;
+  }
+  .footer .footer__estilos p {
+    font-size: large;
   }
 }
 /*# sourceMappingURL=styles.css.map */
