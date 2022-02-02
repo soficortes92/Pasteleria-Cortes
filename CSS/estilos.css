@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(../Imagenes/fondo-header1.jpeg);
+    flex-wrap: wrap;
+}
+.navbar-brand img {
+    width: 125px;
+}
+.navbar-nav .nav-link {
+    background-color: lightgray;
+    color: black;
+    border: 1px dotted black;
+    font-family: 'Advent Pro', sans-serif;
+}
+.navbar-toggler {
+    background-color: darkgray;
+}
+.bienvenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    font-family: 'Advent Pro', sans-serif;
+    font-size: larger;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 0px;
+    animation: bienvenido 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @keyframes bienvenido {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+h3 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.carousel1 {
+    background-color: rgb(255, 226, 226);
+}
+.col-12 .col-xxl-6 {
+    margin-bottom: 15px;
+    padding: 0px;
+}
+.carousel2 {
+    background-color: rgb(255, 199, 199);
+}
+.logo-footer {
+    width: 50px;
+}
+.containerCarousel {
+    width: 100vw;
+}
+.container1 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.prod-img {
+    width: 150px;
+    padding-right: 5px;
+}
+.estilos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    background-color: rgb(170, 170, 170);
+
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+.imagen-aye {
+    height: 50vw;
+    margin: 5px;
+}
+.mb-3 {
+    margin: 10px;
+}
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #carouselExampleControls {
+        width: 75%;
+        height: 75%;
+    }
+    #carouselExampleCaptions {
+        width: 75%;
+        height: 75%;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-1 {
+        border: 1px solid black;
+    }
+    .bienvenido {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: xx-large;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    #carouselExampleControls {
+        width: 75%;
+        height: 75%;
+    }
+    #carouselExampleCaptions {
+        width: 75%;
+        height: 75%;
+        margin-bottom: 10px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 13%;
+    }
+    .enlace:hover {
+        background: rgb(216, 103, 192);
+        color: black;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .navbar-nav .nav-link {
+        font-size: x-large;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        font-size: larger;
+    }
+    .bienvenido {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: xx-large;
+    }
+
+}
