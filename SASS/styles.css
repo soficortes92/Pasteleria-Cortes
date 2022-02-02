@@ -124,7 +124,6 @@ body {
           flex-direction: column;
   margin: 10px;
   padding: 10px;
-  width: 100vw;
 }
 
 .home .home__carousel .home__carousel1 h3, .home .home__carousel .home__carousel2 h3 {
@@ -337,6 +336,9 @@ body {
   }
   .presupuesto .presupuesto__btn {
     font-size: large;
+  }
+  .receta {
+    width: 100vw;
   }
   .receta h4 {
     font-weight: 800;
