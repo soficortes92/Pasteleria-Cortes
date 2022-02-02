@@ -40,7 +40,7 @@ body {
     & .home__carousel {
         width: 100vw;
         margin-bottom: 25px;
-        & .home__carousel1 {
+        & .home__carousel1, .home__carousel2 {
             display: flex;
             flex-direction: column;
             margin: 10px;
@@ -74,6 +74,7 @@ body {
     
 }
 .producto {
+    width: 100vw;
     & &__contenedor1 {
         display: flex;
         border: 1px solid black;
@@ -122,6 +123,33 @@ body {
         border: 1px solid rgb(130, 129, 129);
     }
 }
+.receta {
+    width: 100vw;
+    h3 {
+        font-family: $fontFamily;
+        font-weight: 1000;
+        text-align: center;
+        font-size: xx-large;
+        text-decoration: underline;
+    }
+    & &__contenedor {
+        display: flex;
+        border: 1px solid black;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    & &__imagen {
+        width: 150px;
+        padding: 5px;
+    }
+    & &__contenido {
+        font-family: $fontFamily;
+        padding: 5px;
+        text-align: justify;
+    }
+}
 @media (min-width: 426px) and (max-width: 768px){
     #carouselExampleCaptions {
         width: 75%;
@@ -160,6 +188,16 @@ body {
                 font-size: x-large;
             }
         }
+        & &__carousel {
+            display: flex;
+            flex-direction: row;
+            & &__carousel1 {
+                width: 45%;
+            }
+            & &__carousel2 {
+                width: 45%;
+            }
+        }
     }
     .producto {
         & &__contenedor1 {
@@ -179,6 +217,17 @@ body {
             margin: 15px;
         }
         & &__btn {
+            font-size: large;
+        }
+    }
+    .receta {
+        h4 {
+            font-weight: 800;
+        }
+        & &__imagen {
+            width: 20%;
+        }
+        & &__contenido {
             font-size: large;
         }
     }

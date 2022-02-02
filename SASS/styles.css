@@ -114,7 +114,7 @@ body {
   margin-bottom: 25px;
 }
 
-.home .home__carousel .home__carousel1 {
+.home .home__carousel .home__carousel1, .home .home__carousel .home__carousel2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +127,7 @@ body {
   width: 100vw;
 }
 
-.home .home__carousel .home__carousel1 h3 {
+.home .home__carousel .home__carousel1 h3, .home .home__carousel .home__carousel2 h3 {
   font-family: "Advent Pro", sans-serif;
   font-weight: 1000;
   text-align: center;
@@ -158,6 +158,10 @@ body {
   width: 45vw;
   font-family: "Advent Pro", sans-serif;
   text-align: center;
+}
+
+.producto {
+  width: 100vw;
 }
 
 .producto .producto__contenedor1, .producto .producto__contenedor--col {
@@ -219,6 +223,43 @@ body {
   border: 1px solid #828181;
 }
 
+.receta {
+  width: 100vw;
+}
+
+.receta h3 {
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 1000;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+.receta .receta__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.receta .receta__imagen {
+  width: 150px;
+  padding: 5px;
+}
+
+.receta .receta__contenido {
+  font-family: "Advent Pro", sans-serif;
+  padding: 5px;
+  text-align: justify;
+}
+
 @media (min-width: 426px) and (max-width: 768px) {
   #carouselExampleCaptions {
     width: 75%;
@@ -263,6 +304,21 @@ body {
   .home .ayelen .ayelen__desc {
     font-size: x-large;
   }
+  .home .home__carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home .home__carousel .home .home__carousel__carousel1 {
+    width: 45%;
+  }
+  .home .home__carousel .home .home__carousel__carousel2 {
+    width: 45%;
+  }
   .producto .producto__contenedor1, .producto .producto__contenedor--col {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -280,6 +336,15 @@ body {
     margin: 15px;
   }
   .presupuesto .presupuesto__btn {
+    font-size: large;
+  }
+  .receta h4 {
+    font-weight: 800;
+  }
+  .receta .receta__imagen {
+    width: 20%;
+  }
+  .receta .receta__contenido {
     font-size: large;
   }
   .footer .footer__estilos p {
