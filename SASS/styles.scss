@@ -191,10 +191,12 @@ body {
             display: flex;
             flex-direction: row;
             & &__carousel1 {
-                width: 45%;
+                width: 50%;
+                margin: 0px;
             }
             & &__carousel2 {
-                width: 45%;
+                width: 50%;
+                margin: 0px;
             }
         }
     }

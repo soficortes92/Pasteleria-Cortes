@@ -313,10 +313,12 @@ body {
             flex-direction: row;
   }
   .home .home__carousel .home .home__carousel__carousel1 {
-    width: 45%;
+    width: 50%;
+    margin: 0px;
   }
   .home .home__carousel .home .home__carousel__carousel2 {
-    width: 45%;
+    width: 50%;
+    margin: 0px;
   }
   .producto .producto__contenedor1, .producto .producto__contenedor--col {
     -webkit-box-pack: justify;
