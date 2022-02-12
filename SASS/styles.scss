@@ -46,7 +46,7 @@ body {
         }
     }
 .producto {
-    width: 100vw;
+    width: 100%;
     & &__contenedor1 {
         display: flex;
         border: 1px solid black;
@@ -57,7 +57,6 @@ body {
     }
     & &__contenedor--col {
         @extend .producto__contenedor1;
-        flex-direction: column;
     }
     & &__imagen {
         width: 150px;
@@ -66,19 +65,15 @@ body {
     & &__texto {
         font-family: $fontFamily;
         padding: 5px;
-        text-align: justify;
+        text-align: center;
     }
     & &__btn, & &__btn--box {
         font-family: $fontFamily;
         padding: 5px;
     }
-    @mixin box {
-        font-family: $fontFamily;
-        padding: 5px;
-    }
 }
 .presupuesto {
-    width: 100vw;
+    width: 100%;
     & h1 {
         font-family: $fontFamily;
         font-weight: 900;
@@ -96,7 +91,7 @@ body {
     }
 }
 .receta {
-    width: 100vw;
+    width: 100%;
     h3 {
         font-family: $fontFamily;
         font-weight: 1000;
@@ -113,13 +108,14 @@ body {
         margin: 5px;
     }
     & &__imagen {
+        border: 1px solid black;
         width: 150px;
-        padding: 5px;
+        transform: translate(0px, -200px);
     }
     & &__contenido {
         font-family: $fontFamily;
         padding: 5px;
-        text-align: justify;
+        text-align: left;
     }
 }
 @media (min-width: 426px) and (max-width: 768px){
