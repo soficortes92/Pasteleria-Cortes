@@ -167,13 +167,14 @@ body {
   width: 100%;
 }
 
-.producto .producto__contenedor1, .producto .producto__contenedor--col {
+.producto .producto__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid black;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,7 +193,7 @@ body {
   text-align: center;
 }
 
-.producto .producto__btn, .producto .producto__btn--box {
+.producto .producto__btn {
   font-family: "Advent Pro", sans-serif;
   padding: 5px;
 }
@@ -327,17 +328,18 @@ body {
     margin: 5px;
     padding: 5px;
   }
-  .producto .producto__contenedor1, .producto .producto__contenedor--col {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .producto .producto__contenedor {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 225px;
   }
-  .producto__texto, .producto__btn, .producto__btn--box {
-    font-size: large;
+  .producto .producto__texto {
+    width: 300px;
+    font-size: larger;
   }
-  .producto .producto__contenedor--col {
-    margin-left: 165px;
-    width: 1100px;
+  .producto .producto__btn:hover {
+    background-color: pink;
   }
   .presupuesto p {
     font-size: large;
@@ -347,13 +349,18 @@ body {
     font-size: large;
   }
   .receta {
-    width: 100vw;
+    width: 100%;
+  }
+  .receta .receta__contenedor {
+    margin-bottom: 20px;
   }
   .receta h4 {
     font-weight: 800;
   }
   .receta .receta__imagen {
     width: 20%;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   .receta .receta__contenido {
     font-size: large;
