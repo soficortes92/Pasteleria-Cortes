@@ -1,0 +1,27 @@
+.bienvenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: rgb(246, 246, 246);
+    font-family: $fontFamily;
+    font-size: xx-large;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 0px;
+    animation: bienvenido 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @keyframes bienvenido {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
