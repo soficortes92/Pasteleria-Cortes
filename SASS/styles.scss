@@ -3,12 +3,18 @@
 @import "bienvenido";
 @import "footer";
 
-@mixin carousel {
+@mixin carousel-desktop {
     width: 45%;
     display: flex;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
+}
+@mixin carousel-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
 }
 body {
     width: 100vw;
@@ -18,13 +24,24 @@ body {
     width: 100vw;
     & .home__carousel {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
         width: 100vw;
         margin-bottom: 25px;
         & .home__carousel1 {
-            @include carousel
+            @include carousel-mobile
         }
-        .home h3 {
+        & h3 {
+            font-family: $fontFamily;
+            font-weight: 1000;
+            text-align: center;
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+        & .home__carousel2 {
+            @include carousel-mobile
+        }
+    }
+        & h3 {
             font-family: $fontFamily;
             font-weight: 1000;
             text-align: center;
@@ -32,17 +49,6 @@ body {
             text-decoration: underline;
         }
     }
-        & .home__carousel2 {
-            @include carousel
-        }
-            .home h3 {
-                font-family: $fontFamily;
-                font-weight: 1000;
-                text-align: center;
-                font-size: xx-large;
-                text-decoration: underline;
-            }
-        }
     .ayelen {
         display: flex;
         justify-content: space-between;
@@ -181,10 +187,10 @@ body {
             display: flex;
             flex-direction: row;
             & &__carousel1 {
-                width: 50%;
+                @include carousel-desktop;
             }
             & &__carousel2 {
-                width: 50%;
+                @include carousel-desktop;
             }
         }
     }
