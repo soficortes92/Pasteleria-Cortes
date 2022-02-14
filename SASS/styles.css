@@ -335,18 +335,21 @@ body {
     height: 225px;
   }
   .producto .producto__texto {
-    width: 300px;
-    font-size: larger;
+    width: 600px;
+    font-size: x-large;
+  }
+  .producto .producto__btn {
+    font-size: x-large;
   }
   .producto .producto__btn:hover {
     background-color: pink;
   }
   .presupuesto p {
-    font-size: large;
+    font-size: x-large;
     margin: 15px;
   }
   .presupuesto .presupuesto__btn {
-    font-size: large;
+    font-size: x-large;
   }
   .receta {
     width: 100%;
@@ -363,10 +366,10 @@ body {
             transform: translate(0px, 0px);
   }
   .receta .receta__contenido {
-    font-size: large;
+    font-size: x-large;
   }
   .footer .footer__estilos p {
-    font-size: large;
+    font-size: x-large;
   }
 }
 /*# sourceMappingURL=styles.css.map */

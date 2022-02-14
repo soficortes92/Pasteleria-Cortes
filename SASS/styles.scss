@@ -175,8 +175,11 @@ body {
             height: 225px;
         }
         & &__texto {
-            width: 300px;
-            font-size: larger;
+            width: 600px;
+            font-size: x-large;
+        }
+        & &__btn {
+            font-size: x-large;
         }
         & &__btn:hover {
             background-color: pink;
@@ -184,11 +187,11 @@ body {
     }
     .presupuesto {
         & p {
-            font-size: large;
+            font-size: x-large;
             margin: 15px;
         }
         & &__btn {
-            font-size: large;
+            font-size: x-large;
         }
     }
     .receta {
@@ -204,13 +207,13 @@ body {
             transform: translate(0px, 0px);
         }
         & &__contenido {
-            font-size: large;
+            font-size: x-large;
         }
     }
     .footer {
         & &__estilos {
             p {
-                font-size: large;
+                font-size: x-large;
             }
         }
     }
